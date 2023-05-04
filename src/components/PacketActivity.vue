@@ -10,7 +10,7 @@ import {
 } from 'highcharts-vue'
 
 export default {
-    name: 'IOActivities',
+    name: 'PacketActivity',
     components: {
         highcharts: Chart
     },
@@ -21,15 +21,15 @@ export default {
         return {
             chartOptions: {
                 chart: {
-                    type: 'column'
+                    type: 'line'
                 },
                 title: {
-                    text: 'Controlled 1/O Activity By Computers',
+                    text: 'Packet Activity',
                     align: 'left'
 
                 },
                 xAxis: {
-                    categories: ['Device 1', 'Device 2', 'Device 3', 'Device 4', 'Device 5']
+                    // categories: ['Device 1', 'Device 2', 'Device 3', 'Device 4', 'Device 5']
                 },
                 yAxis: {
                     visible: false,
@@ -51,13 +51,7 @@ export default {
                 },
                 series: [{
                     name: 'Computer',
-                    data: [4, 4, 6, 5, 4]
-                }, {
-                    name: 'Mobiles',
-                    data: [5, 3, 3, 5, 1]
-                }, {
-                    name: 'Others',
-                    data: [5, 6, 8, 5, 2]
+                    data: [4, 4, 6, 5, 4, 5, 4, 6, 7]
                 }]
             }
         }

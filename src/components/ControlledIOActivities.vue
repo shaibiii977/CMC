@@ -24,7 +24,7 @@ export default {
                     type: 'line'
                 },
                 title: {
-                    text: 'Controlled 1/O Activity By Computers'
+                    text: 'Controlled 1/O Activity History'
                 },
                 xAxis: {
                     categories: ['Device 1', 'Device 2', 'Device 3', 'Device 4', 'Device 5']
@@ -33,7 +33,8 @@ export default {
                     visible: false,
                     min: 0,
                     title: {
-                        text: 'Device Name'
+                        text: 'Device Name',
+                        align: 'left'
                     }
                 },
                 legend: {

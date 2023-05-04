@@ -4,6 +4,7 @@
     <HDFProtectionStatus />
     <IOActivities />
     <ControlledIOActivities />
+    <PacketActivity />
   </div>
 </template>
 
@@ -13,14 +14,16 @@ import ClientStatus from './components/ClientStatus.vue'
 import HDFProtectionStatus from './components/HDFProtectionStatus.vue'
 import IOActivities from './components/IOActivities.vue'
 import ControlledIOActivities from './components/ControlledIOActivities.vue'
+import PacketActivity from './components/PacketActivity.vue'
 
 export default {
   name: 'CMC',
   components: {
     ClientStatus,
     HDFProtectionStatus,
+    PacketActivity,
     ControlledIOActivities,
-    IOActivities
+    IOActivities,
   }
 }
 </script>
